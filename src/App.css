@@ -1,0 +1,17 @@
+.main {
+  margin: 0%;
+  padding: 0px;
+}
+.header {
+  margin: 30px;
+  padding: 60px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #1e293b;
+}
+#top-name {
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+#top-description {
+  color: rgb(82, 82, 162);
+}
