@@ -19,6 +19,18 @@ function App() {
     setTasks([...tasks, task]);
   }
 
+  // update Task
+  const updateTask = (updateTask, index) => {
+    const newtask = ([...tasks]);
+    newtask[index] = updateTask;
+    setTasks(newtask);
+  }
+
+  // delete Task
+  const deleteTask = (index) => {
+    setTasks(tasks.filter((_, i) => i != index));
+  }
+
   return (
     <>
       <div className="main" >
@@ -28,7 +40,7 @@ function App() {
         </div>
       </div>
       <Taskform addTask={addTask} />
-      <TaskList />
+      <TaskList tasks={tasks} updateTask={updateTask} deleteTask={deleteTask} />
       <Progresstracker />
       <button>Clear all task</button>
     </>

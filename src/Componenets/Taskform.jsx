@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../CSS/Taskform.css";
 
 function Taskform({ addTask }) {
       const [task, setTask] = useState('');
@@ -20,9 +21,9 @@ function Taskform({ addTask }) {
                         <input value={task} type="text" placeholder="Enter the Task" className="to-do-input"
                               onChange={(e) => setTask(e.target.value)} />
                         <button type="submit">Add Task</button>
-                        <h1>
+                        {/* <h1>
                               {task} {priority} {catagory}
-                        </h1>
+                        </h1> */}
                   </div>
                   <div>
                         <select value={priority} className="" id="" onChange={(e) => setPriority(e.target.value)}>

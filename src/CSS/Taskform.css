@@ -1,0 +1,82 @@
+/* Overall page center karna */
+body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
+      font-family: "Poppins", sans-serif;
+}
+
+/* Form box */
+form {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      transition: 0.3s ease;
+}
+
+form:hover {
+      transform: scale(1.02);
+}
+
+/* Input field */
+.to-do-input {
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      outline: none;
+      width: 220px;
+      font-size: 16px;
+      transition: 0.3s;
+}
+
+.to-do-input:focus {
+      border-color: #4aa3ff;
+      box-shadow: 0 0 5px #4aa3ff;
+}
+
+/* Add button */
+button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background: #4aa3ff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+}
+
+button:hover {
+      background: #007bff;
+}
+
+/* Dropdowns */
+select {
+      padding: 10px 15px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      outline: none;
+      transition: 0.3s;
+}
+
+select:focus {
+      border-color: #4aa3ff;
+      box-shadow: 0 0 5px #4aa3ff;
+}
+
+/* Displayed text (task + priority + category) */
+h1 {
+      color: #4aa3ff; /* Light blue */
+      margin-top: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+}
